@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
-import 'HomePage.dart';
+import 'Navigator/Login.dart';
+import 'Navigator/Phone.dart';
+import 'Navigator/SignUp.dart';
 
 void main() {
   runApp(
@@ -22,182 +23,159 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              child: Text(
-                'Millions of Songs.',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
+        child: Container(
+          padding: EdgeInsets.fromLTRB(30, 500, 30, 0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              //Text
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      child: Text(
+                        'Million of Songs.',
+                        style: TextStyle(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: Text(
+                        'Free on Sopotifi.',
+                        style: TextStyle(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            ),
-            Container(
-              child: Text(
-                'Free on Sopotifi.',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
+
+              //Button 1-3
+              Container(
+                padding: EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    
+                    //Button1
+                    Container(
+                      padding: EdgeInsets.all(5),
+
+                      child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SignUp(),
+                            ));
+                      },
+                      child: Text(
+                        "Sign Up Free",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.green),
+                        padding: MaterialStateProperty.all(
+                            EdgeInsets.fromLTRB(100, 10, 100, 10)),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.horizontal(
+                              left: Radius.circular(30),
+                              right: Radius.circular(30),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    ),
+                    
+
+                    //Button2
+                    Container(
+                      padding: EdgeInsets.all(5),
+
+                      child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Phone(),
+                            ));
+                      },
+                      child: Text(
+                        "Login with phone number",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.white),
+                        padding: MaterialStateProperty.all(
+                            EdgeInsets.fromLTRB(50, 10, 50, 10)),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.horizontal(
+                              left: Radius.circular(30),
+                              right: Radius.circular(30),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    ),
+
+                    //Button3
+                    Container(
+                      padding: EdgeInsets.all(5),
+
+                      child: 
+                      ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Login(),
+                            ));
+                      },
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        padding: MaterialStateProperty.all(
+                            EdgeInsets.fromLTRB(130, 10, 130, 10)),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.horizontal(
+                              left: Radius.circular(30),
+                              right: Radius.circular(30),
+                            ),
+                            side: BorderSide(color: Colors.white)
+                          ),
+                        ),
+                      ),
+                    ),
+                    ),
+
+                  ],
                 ),
               ),
-            ),
-            Container(
-              padding: EdgeInsets.fromLTRB(30, 50, 30, 0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => SignUp(),
-                          ));
-                    },
-                    child: Text(
-                      "Sign Up Free",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.green),
-                      padding: MaterialStateProperty.all(
-                          EdgeInsets.fromLTRB(100, 10, 100, 10)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.horizontal(
-                            left: Radius.circular(30),
-                            right: Radius.circular(30),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Phone(),
-                          ));
-                    },
-                    child: Text(
-                      "Continue with phone number",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                      ),
-                    ),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.white),
-                      padding: MaterialStateProperty.all(
-                          EdgeInsets.fromLTRB(40, 10, 40, 10)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.horizontal(
-                            left: Radius.circular(30),
-                            right: Radius.circular(30),
-                          ),
-                          side: BorderSide(
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Login(),
-                          ));
-                    },
-                    child: Text(
-                      "Log in",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
-                    ),
-                    style: ButtonStyle(
-                      padding: MaterialStateProperty.all(
-                          EdgeInsets.fromLTRB(70, 10, 70, 10)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.horizontal(
-                            left: Radius.circular(20),
-                            right: Radius.circular(20),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            )
-          ],
+            ],
+          ),
         ),
       ),
     );
-  }
-}
-
-class Phone extends StatefulWidget {
-  @override
-  _PhoneState createState() => _PhoneState();
-}
-
-class _PhoneState extends State<Phone> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class Login extends StatefulWidget {
-  @override
-  _LoginState createState() => _LoginState();
-}
-
-class _LoginState extends State<Login> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Ionicons.arrow_back),
-      ),
-      body: Container(
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
-        child: Column(
-          children: [
-            Text(
-              'Email or username',
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 30,
-              ),
-            ),
-          ],
-        )
-      ),
-    );
-  }
-}
-
-class SignUp extends StatefulWidget {
-  @override
-  _SignUpState createState() => _SignUpState();
-}
-
-class _SignUpState extends State<SignUp> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
