@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/HomePage.dart';
-import 'package:flutter_app/Navigator/Forget.dart';
-
 import 'Login.dart';
 
 class Forget extends StatefulWidget {
