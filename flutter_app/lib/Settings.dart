@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/router.dart';
+import 'package:ionicons/ionicons.dart';
 
 class Settings extends StatefulWidget {
   @override
@@ -13,21 +15,27 @@ class _SettingState extends State<Settings> {
     super.initState();
     items = [
       {
+        'icon': Ionicons.heart,
         'title': 'Favorites',
       },
       {
+        'icon': Ionicons.download,
         'title': 'Downloads',
       },
       {
+        'icon': Ionicons.moon,
         'title': 'Dark Mode',
       },
       {
+        'icon': Ionicons.information,
         'title': 'About',
+        'function': () => showAbout(),
       },
       {
+        'icon': Ionicons.document_text,
         'title': 'Licenses',
-      },
-    ];
+        'function': () => _pushPageDialog(LicensePage()),
+      }];
   }
 
   @override
@@ -69,7 +77,13 @@ class _SettingState extends State<Settings> {
       ),
     );
   }
+ _pushPage(Widget page) {
+    MyRouter.pushPage(context, page);
+  }
 
+  _pushPageDialog(Widget page) {
+    MyRouter.pushPageDialog(context, page);
+  }
 
   showAbout() {
     showDialog(
