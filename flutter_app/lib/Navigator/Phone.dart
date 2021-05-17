@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/HomePage.dart';
+import 'package:flutter_app/MenuNavigation.dart';
 import 'package:flutter_app/Navigator/Forget.dart';
 
 class Phone extends StatefulWidget {
@@ -83,7 +84,7 @@ class _PhoneState extends State<Phone> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomePage(),
+                          builder: (context) => MenuScreen(),
                         ));
                   },
                   child: Text(

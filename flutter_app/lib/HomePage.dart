@@ -40,37 +40,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            IconButton(
-              onPressed: () {
-                HomePage();
-              },
-              icon: Icon(Ionicons.home),
-            ),
-            IconButton(
-              onPressed: () {
-                Search();
-              },
-              icon: Icon(Ionicons.search),
-            ),
-            IconButton(
-                onPressed: () {
-                  Library();
-                },
-                icon: Icon(Icons.bookmark)),
-            IconButton(
-              onPressed: () {
-                Settings();
-              },
-              icon: Icon(Icons.settings),
-            ),
-          ],
-        ),
-      ),
+     
     );
   }
 }
