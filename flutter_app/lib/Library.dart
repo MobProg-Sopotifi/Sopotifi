@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LibraryPage extends StatefulWidget {
+class Library extends StatefulWidget {
   @override
-  _LibraryPageState createState() => _LibraryPageState();
+  _LibraryState createState() => _LibraryState();
 }
 
-class _LibraryPageState extends State<LibraryPage> {
+class _LibraryState extends State<Library> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
