@@ -12,27 +12,27 @@ class MenuScreen extends StatefulWidget {
 
 class _MenuScreenState extends State<MenuScreen> {
   int selectedIndex = 0;
-  final screen = [HomePage(), Search(), Library(),Settings()];
+  final screen = [HomePage(), Search(), Library(), Settings()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.white,
-          automaticallyImplyLeading: false,
-          elevation: 0,
-          actions: [
-            TextButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Settings()));
-                },
-                child: Icon(
-                  Ionicons.settings_outline,
-                  color: Colors.black,
-                )),
-          ],
-        ),
+        backgroundColor: Colors.white,
+        automaticallyImplyLeading: false,
+        elevation: 0,
+        actions: [
+          TextButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Settings()));
+              },
+              child: Icon(
+                Ionicons.settings_outline,
+                color: Colors.black,
+              )),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
         backgroundColor: Colors.white,
@@ -50,7 +50,7 @@ class _MenuScreenState extends State<MenuScreen> {
             icon: Icon(Ionicons.book),
             label: 'Library',
           ),
-           BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Ionicons.settings_outline),
             label: 'Settings',
           ),

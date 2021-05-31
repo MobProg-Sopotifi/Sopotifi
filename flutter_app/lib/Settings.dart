@@ -35,7 +35,8 @@ class _SettingState extends State<Settings> {
         'icon': Ionicons.document_text,
         'title': 'Licenses',
         'function': () => _pushPageDialog(LicensePage()),
-      }];
+      }
+    ];
   }
 
   @override
@@ -58,8 +59,7 @@ class _SettingState extends State<Settings> {
         physics: NeverScrollableScrollPhysics(),
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
-          if (items[index]['title'] == 'Dark Mode') {
-          }
+          if (items[index]['title'] == 'Dark Mode') {}
 
           return ListTile(
             onTap: items[index]['function'],
@@ -77,7 +77,8 @@ class _SettingState extends State<Settings> {
       ),
     );
   }
- _pushPage(Widget page) {
+
+  _pushPage(Widget page) {
     MyRouter.pushPage(context, page);
   }
 
