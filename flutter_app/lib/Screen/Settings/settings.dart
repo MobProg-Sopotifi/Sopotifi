@@ -1,16 +1,17 @@
-import 'package:ext_storage/ext_storage.dart';
-import 'package:filesystem_picker/filesystem_picker.dart';
+
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:share/share.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:package_info/package_info.dart';
-
+import 'package:flutter_app/Helper/country_code.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/Screen/Top Charts/top.dart' as topScreen;
+import 'package:flutter_app/Screen/Home/trending.dart' as trendingScreen;
+import 'package:flutter_app/Helper/config.dart';
 
 class SettingPage extends StatefulWidget {
   final Function callback;

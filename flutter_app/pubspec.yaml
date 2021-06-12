@@ -52,7 +52,9 @@ dependencies:
   package_info: ^2.0.0
   device_info: ^2.0.1
   # path_provider_ex: ^1.0.1
-
+  miniplayer:
+    git:
+      url: https://github.com/Sangwan5688/miniplayer.git
   
   
 dev_dependencies:

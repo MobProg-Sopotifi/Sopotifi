@@ -1,6 +1,15 @@
+import 'dart:ui';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
+
+import 'package:flutter_app/CustomWidgets/downloadButton.dart';
+import 'package:flutter_app/Screen/Player/audioplayer.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/CustomWidgets/emptyScreen.dart';
+import 'package:flutter_app/CustomWidgets/miniplayer.dart';
+import 'package:flutter_app/APIs/api.dart';
 class SearchPage extends StatefulWidget {
   @override
   _SearchPageState createState() => _SearchPageState();

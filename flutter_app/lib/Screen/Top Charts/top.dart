@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:web_scraper/web_scraper.dart';
-
+import 'package:flutter_app/CustomWidgets/emptyScreen.dart';
 
 List items = [];
 List globalItems = [];

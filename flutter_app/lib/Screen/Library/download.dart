@@ -1,3 +1,18 @@
+import 'package:audiotagger/models/tag.dart';
+import 'package:flutter_app/Screen/Player/audioplayer.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/CustomWidgets/emptyScreen.dart';
+import 'package:flutter_app/CustomWidgets/miniplayer.dart';
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:ext_storage/ext_storage.dart';
+import 'package:hive/hive.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:audiotagger/audiotagger.dart';
+import 'dart:io';
+import 'showSongs.dart';
+
 class DownloadedSongs extends StatefulWidget {
   final String type;
   DownloadedSongs({Key key, @required this.type}) : super(key: key);

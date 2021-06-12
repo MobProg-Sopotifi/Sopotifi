@@ -11,8 +11,11 @@ import 'dart:io';
 import 'package:hive/hive.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:async';
-
-
+import 'package:flutter_app/CustomWidgets/downloadButton.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/CustomWidgets/emptyScreen.dart';
+import 'package:flutter_app/CustomWidgets/seekBar.dart';
+import 'package:flutter_app/Services/audioService.dart';
 class PlayScreen extends StatefulWidget {
   final Map data;
   final controller;

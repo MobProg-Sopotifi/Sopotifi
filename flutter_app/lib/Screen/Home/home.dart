@@ -10,6 +10,16 @@ import 'trending.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:package_info/package_info.dart';
+
+
+import 'package:flutter_app/Helper/country_code.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/Screen/Library/download.dart';
+import 'package:flutter_app/Screen/Library/library.dart';
+import 'package:flutter_app/Screen/Settings/settings.dart';
+import 'package:flutter_app/CustomWidgets/miniplayer.dart';
+import 'package:flutter_app/Screen/Top Charts/top.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();

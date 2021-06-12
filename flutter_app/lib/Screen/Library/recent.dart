@@ -1,7 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+
+import 'package:hive/hive.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/CustomWidgets/emptyScreen.dart';
+import 'package:flutter_app/CustomWidgets/miniplayer.dart';
+import 'package:flutter_app/Screen/Player/audioplayer.dart';
 class RecentlyPlayed extends StatefulWidget {
   @override
   _RecentlyPlayedState createState() => _RecentlyPlayedState();

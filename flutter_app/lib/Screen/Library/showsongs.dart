@@ -1,8 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-
-
+import 'package:flutter_app/Screen/Player/audioplayer.dart';
+import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
+import 'package:flutter_app/CustomWidgets/miniplayer.dart';
 class SongsList extends StatefulWidget {
   final List data;
   final bool offline;
