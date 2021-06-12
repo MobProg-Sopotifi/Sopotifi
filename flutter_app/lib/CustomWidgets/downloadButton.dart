@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Services/download.dart';
+
 class DownloadButton extends StatefulWidget {
   final Map data;
   final String icon;
-  DownloadButton({Key key, @required this.data, this.icon}) : super(key: key);
+  DownloadButton({ Key key,  this.data,  this.icon}) : super(key: key);
 
   @override
   _DownloadButtonState createState() => _DownloadButtonState();

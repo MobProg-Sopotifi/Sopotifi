@@ -1,8 +1,11 @@
 import 'dart:io';
 import 'package:audio_service/audio_service.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/CustomWidgets/gradientContainers.dart';
 import 'package:flutter_app/CustomWidgets/emptyScreen.dart';
 import 'package:flutter_app/CustomWidgets/miniplayer.dart';
+import 'package:flutter/material.dart';
+
 class NowPlaying extends StatefulWidget {
   @override
   _NowPlayingState createState() => _NowPlayingState();

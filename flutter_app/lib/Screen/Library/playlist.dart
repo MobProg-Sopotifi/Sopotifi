@@ -298,6 +298,8 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
       ),
     );
   }
+
+  Collage({imageList, String placeholderImage}) {}
 }
 
 void addPlaylist(String name, Map info) async {

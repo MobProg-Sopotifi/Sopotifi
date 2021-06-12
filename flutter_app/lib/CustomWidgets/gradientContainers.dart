@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class GradientContainer extends StatefulWidget {
   final Widget child;
   final bool opacity;
-  GradientContainer({@required this.child, this.opacity});
+  GradientContainer({ this.child, this.opacity});
   @override
   _GradientContainerState createState() => _GradientContainerState();
 }
