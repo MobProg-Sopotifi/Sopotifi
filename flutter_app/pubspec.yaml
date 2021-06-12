@@ -52,10 +52,7 @@ dependencies:
   package_info: ^2.0.0
   device_info: ^2.0.1
   # path_provider_ex: ^1.0.1
-  filesystem_picker:
-    git:
-      url: https://github.com/Sangwan5688/filesystem_picker.git
-      path: package
+
   
   
 dev_dependencies:
