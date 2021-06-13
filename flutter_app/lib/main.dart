@@ -119,6 +119,8 @@ class _MyAppState extends State<MyApp> {
         accentColor: currentTheme.currentColor(),
       ),
 
+      debugShowCheckedModeBanner: false,
+      
       darkTheme: ThemeData(
         textSelectionTheme: TextSelectionThemeData(
           selectionHandleColor: currentTheme.currentColor(),

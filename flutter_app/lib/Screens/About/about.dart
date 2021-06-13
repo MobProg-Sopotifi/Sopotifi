@@ -38,7 +38,7 @@ class _AboutScreenState extends State<AboutScreen> {
               child: Image(
                 fit: BoxFit.fill,
                 image: AssetImage(
-                  'assets/icon-white-trans.png',
+                  'assets/Colors.png',
                 ),
               ),
             ),

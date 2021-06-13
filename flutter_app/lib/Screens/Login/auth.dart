@@ -88,7 +88,7 @@ class _AuthScreenState extends State<AuthScreen> {
             top: MediaQuery.of(context).size.width / 5,
             child: Image(
               image: AssetImage(
-                'assets/icon-white-trans.png',
+                'assets/Colors.png',
               ),
             ),
           ),
@@ -122,7 +122,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             children: <TextSpan>[
                               TextSpan(
-                                text: 'BlackHole',
+                                text: 'Sopotifi',
                                 style: TextStyle(
                                   // color: Theme.of(context).accentColor,
                                   fontWeight: FontWeight.bold,
