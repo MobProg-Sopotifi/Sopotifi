@@ -343,8 +343,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: af3c1beb0dac97fad351ba9aae654d887a8e0c24
-      url: "https://github.com/Sangwan5688/miniplayer.git"
+      resolved-ref: "23a7610f864b53e36025764554888d323a259299"
+      url: "https://github.com/Rayvaldi/miniplayer.git"
     source: git
     version: "1.0.0+2"
   octo_image:
