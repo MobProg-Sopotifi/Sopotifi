@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart';
-import 'package:flutter_app/Helper/format.dart';
+import 'package:flutter_app/Helpers/format.dart';
 class Search {
   Future<List> fetchSearchResults(String searchQuery) async {
     List searchedList = [];

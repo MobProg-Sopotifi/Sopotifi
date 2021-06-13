@@ -7,16 +7,15 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
-
-import 'package:flutter_app/Helper/config.dart';
-import 'package:flutter_app/Screen/Library/nowplaying.dart';
-import 'package:flutter_app/Screen/Library/playlist.dart';
-import 'package:flutter_app/Screen/Library/recent.dart';
-import 'package:flutter_app/Screen/Home/home.dart';
-import 'package:flutter_app/Screen/Settings/settings.dart';
-import 'package:flutter_app/Screen/Search/search.dart';
-import 'package:flutter_app/Screen/Login/auth.dart';
-
+import 'package:flutter_app/Screens/Login/auth.dart';
+import 'package:flutter_app/Helpers/config.dart';
+import 'package:flutter_app/Screens/Library/nowplaying.dart';
+import 'package:flutter_app/Screens/Library/playlists.dart';
+import 'package:flutter_app/Screens/Library/recent.dart';
+import 'package:flutter_app/Screens/About/about.dart';
+import 'package:flutter_app/Screens/Home/home.dart';
+import 'package:flutter_app/Screens/Settings/setting.dart';
+import 'package:flutter_app/Screens/Search/search.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
@@ -145,8 +144,10 @@ class _MyAppState extends State<MyApp> {
         // '/liked': (context) => LikedSongs(),
         // '/downloaded': (context) => DownloadedSongs(),
         // '/play': (context) => PlayScreen(),
+        '/about': (context) => AboutScreen(),
         '/playlists': (context) => PlaylistScreen(),
         // '/mymusic': (context) => MyMusicScreen(),
+        '/nowplaying': (context) => NowPlaying(),
         '/recent': (context) => RecentlyPlayed(),
       },
     );
